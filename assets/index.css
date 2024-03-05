@@ -116,15 +116,22 @@ footer{
     }
 }
 
-@media screen and (max-width: 368px) {
-    .header{
+@media screen and (max-width: 569px) {
+    .header, footer{
         width: 320px;
+        padding: 7.5px 0px;
+    }
+    .textMob{
+        font-size: 36px;
+        line-height: 46px;
     }
 
-    .logocontainer img{
-
+    .logocontainer{
+        justify-content: flex-start;
     }
-
+    .imageMob{
+        display: none;
+    }
     .imageMobPort{
         display: block;
     }
