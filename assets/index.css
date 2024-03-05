@@ -1,0 +1,131 @@
+
+body{
+    padding-top: 120px;
+}
+.header{
+    width: 900px;
+    padding: 0px 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: arial;
+}
+
+h2{
+    font-family: arial;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #969696;
+}
+.headertext{
+    text-align: left;
+    max-width: 396px;
+}
+h1{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+}
+.textMob, .imageMob{
+    display: none;
+}
+
+p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.button{
+    background: #24AFB5;
+    color: white;
+    padding: 11px 16px;
+}
+
+footer{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px 100px;
+}
+
+.logocontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logocontainer img{
+    align-self: start;
+    max-height: 30px;
+}
+.imageMobPort{
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    .header{
+        width: 768px;
+        padding: 0px 30px;
+    }
+    .imageDesk{
+        display: block;
+    }
+    h1{
+        margin: 0;
+    }
+    footer{
+        width: 768px;
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        padding-top: 108px;
+    }
+    .header{
+        width: 568px;
+        flex-direction: column;
+        text-align: left;;
+    }
+    .imageDesk{
+        display: none;
+    }    
+
+    .textWeb{
+        display: none;
+    }
+    .textMob{
+        display: block;
+    }
+    .imageMob{
+        display: block;
+    }
+    .logocontainer{
+        padding-top: 20px;
+        max-width: 400px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logocontainer img{
+        padding-right: 10px;
+        flex-basis: 30%;
+    }
+    .alignment{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .header{
+        width: 320px;
+    }
+
+    .logocontainer img{
+
+    }
+
+    .imageMobPort{
+        display: block;
+    }
+}
